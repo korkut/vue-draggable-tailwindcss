@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="space-x-4 p-4">
+  <div id="app" class="space-x-4 p-4 h-screen" @click="resetShowBadge">
     <div class="flex flex-wrap items-start py-6">
       <draggable
         :list="columns"
@@ -138,6 +138,13 @@ export default {
     // localStorage.theme = "dark";
   },
   methods: {
+    resetShowBadge() {
+      this.columns.forEach((c) => {
+        c.tasks.forEach((t) => {
+          t.isShowChangeBadge = false;
+        });
+      });
+    },
     addTask(column) {
       column.tasks.push({
         user: "Unknown",

@@ -24,16 +24,10 @@ export default {
     columns: { type: Array, default: null },
   },
   methods: {
-    resetShowBadge() {
-      this.columns.forEach((c) => {
-        c.tasks.forEach((t) => {
-          t.isShowChangeBadge = false;
-        });
-      });
-    },
     handleChangeBadge() {
-      this.resetShowBadge();
-      this.task.isShowChangeBadge = true;
+      setTimeout(() => {
+        this.task.isShowChangeBadge = true;
+      }, 0);
     },
   },
   mounted() {
