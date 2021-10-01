@@ -8,16 +8,16 @@
       <p
         class="hover:bg-gray-100 focus:bg-gray-100 dark:bg-[#4b4e69] dark:text-white outline-none text-sm text-gray-700 hover:cursor-text"
         contenteditable
-        @blur="(event) => (task.user = event.target.innerText)"
+        @blur="(event) => (task.title = event.target.innerText)"
       >
-        {{ task.user }}
+        {{ task.title }}
       </p>
       <p
         class="hover:bg-gray-100 focus:bg-gray-100 dark:bg-[#4b4e69] dark:text-white outline-none text-sm text-gray-700 hover:cursor-text"
         contenteditable
-        @blur="(event) => (task.title = event.target.innerText)"
+        @blur="(event) => (task.description = event.target.innerText)"
       >
-        {{ task.title }}
+        {{ task.description }}
       </p>
     </div>
     <Badge :columns="columns" :task="task"></Badge>

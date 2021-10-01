@@ -22,7 +22,12 @@
               dark:font-semibold
               text-sm text-gray-700
               dark:text-white
-            "
+              hover:cursor-text
+              hover:bg-gray-100
+              focus:bg-gray-100
+              outline-none"
+              contenteditable
+              @blur="(event) => (column.title = event.target.innerText)"
             >
               {{ column.title }}
             </h3>
@@ -147,15 +152,15 @@ export default {
     },
     addTask(column) {
       column.tasks.push({
-        user: "Unknown",
-        title: "New Task",
+        title: "User",
+        description: "New Task",
         dataIcon: "clock",
         isShowChangeBadge: false,
       });
     },
     handleEnter(event) {
       this.columns.push({
-        title: event.target.value,
+        description: event.target.value,
         tasks: [],
       });
       event.target.value = "";
@@ -169,15 +174,15 @@ export default {
           tasks: [
             {
               id: 1,
-              user: "Mehmet",
-              title: "Add discount code to checkout page",
+              title: "Mehmet",
+              description: "Add discount code to checkout page",
               dataIcon: "clock",
               isShowChangeBadge: false,
             },
             {
               id: 2,
-              user: "Hüseyin",
-              title: "Provide documentation on integrations",
+              title: "Hüseyin",
+              description: "Provide documentation on integrations",
               dataIcon: "check",
               isShowChangeBadge: false,
             },
@@ -188,15 +193,15 @@ export default {
           tasks: [
             {
               id: 3,
-              user: "Hüseyin",
-              title: "check shopping cart dropdown",
+              title: "Hüseyin",
+              description: "check shopping cart dropdown",
               dataIcon: "exclamation",
               isShowChangeBadge: false,
             },
             {
               id: 4,
-              user: "Mehmet",
-              title: "Add discount code to checkout page",
+              title: "Mehmet",
+              description: "Add discount code to checkout page",
               dataIcon: "clock",
               isShowChangeBadge: false,
             },
@@ -207,15 +212,15 @@ export default {
           tasks: [
             {
               id: 5,
-              user: "Hüseyin",
-              title: "Provide documentation on integrations",
+              title: "Hüseyin",
+              description: "Provide documentation on integrations",
               dataIcon: "check",
               isShowChangeBadge: false,
             },
             {
               id: 6,
-              user: "Mehmet",
-              title: "check shopping cart dropdown",
+              title: "Mehmet",
+              description: "check shopping cart dropdown",
               dataIcon: "sort-alt",
               isShowChangeBadge: false,
             },
@@ -226,15 +231,15 @@ export default {
           tasks: [
             {
               id: 7,
-              user: "Hüseyin",
-              title: "Add discount code to checkout page",
+              title: "Hüseyin",
+              description: "Add discount code to checkout page",
               dataIcon: "clock",
               isShowChangeBadge: false,
             },
             {
               id: 8,
-              user: "Mehmet",
-              title: "check shopping cart dropdown",
+              title: "Mehmet",
+              description: "check shopping cart dropdown",
               dataIcon: "check",
               isShowChangeBadge: false,
             },
