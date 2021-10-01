@@ -81,9 +81,9 @@
             </svg>
           </button>
         </div>
-      </draggable>
-      <div
-        class="
+        <div class="flex flex-col items-center cursor-move">
+          <div
+            class="
           flex
           items-center
           space-x-2
@@ -97,26 +97,28 @@
           dark:hover:bg-gray-500
           dark:text-white
         "
-      >
-        <svg
-          class="h-5 w-5"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-        <input
-          class="outline-none bg-gray-200 focus:bg-white dark:bg-[#797e93] dark:text-white"
-          placeholder="Add new list"
-          @keydown.enter="handleEnter"
-        />
-      </div>
+          >
+            <svg
+              class="h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <input
+              class="outline-none bg-gray-200 focus:bg-white dark:bg-[#797e93] dark:text-white"
+              placeholder="Add new list"
+              @keydown.enter="handleEnter"
+            />
+          </div>
+        </div>
+      </draggable>
     </div>
   </div>
 </template>
@@ -160,7 +162,7 @@ export default {
     },
     handleEnter(event) {
       this.columns.push({
-        description: event.target.value,
+        title: event.target.value,
         tasks: [],
       });
       event.target.value = "";
