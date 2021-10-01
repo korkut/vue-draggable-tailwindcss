@@ -261,7 +261,7 @@ export default {
 /* Unfortunately @apply cannot be setup in codesandbox, 
 but you'd use "@apply border opacity-50 border-blue-500 bg-gray-200" here */
 .ghost-card {
-  background: #f7fafc;
+  background: #e2e2e2;
   border: 1px solid #4299e1;
 }
 </style>

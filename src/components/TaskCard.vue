@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-between rounded bg-white dark:bg-[#4b4e69] dark:border dark:border-transparent dark:hover:border-white shadow hover:shadow-lg transition duration-300 ease-in-out p-4 pl-10"
+    class="flex items-center justify-between rounded bg-white dark:bg-[#4b4e69] dark:border dark:border-transparent dark:hover:border-white shadow hover:shadow-lg ease-in-out p-4 pl-10"
   >
     <div
       class="font-bold text-sm text-gray-700 dark:font-semibold dark:text-white"
