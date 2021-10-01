@@ -3,7 +3,7 @@
     <div class="flex flex-wrap items-start py-6">
       <draggable
         :list="columns"
-        :animation="200"
+        :animation="300"
         ghost-class="ghost-card"
         group="colums"
         class="flex"
@@ -34,7 +34,7 @@
             <!-- Draggable component comes from vuedraggable. It provides drag & drop functionality -->
             <draggable
               :list="column.tasks"
-              :animation="200"
+              :animation="300"
               ghost-class="ghost-card"
               group="tasks"
             >
@@ -261,7 +261,6 @@ export default {
 /* Unfortunately @apply cannot be setup in codesandbox, 
 but you'd use "@apply border opacity-50 border-blue-500 bg-gray-200" here */
 .ghost-card {
-  opacity: 0.5;
   background: #f7fafc;
   border: 1px solid #4299e1;
 }
