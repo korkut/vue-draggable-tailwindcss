@@ -176,14 +176,14 @@ export default {
           tasks: [
             {
               id: 1,
-              title: "Mehmet",
+              title: "User1",
               description: "Add discount code to checkout page",
               dataIcon: "clock",
               isShowChangeBadge: false,
             },
             {
               id: 2,
-              title: "Hüseyin",
+              title: "User2",
               description: "Provide documentation on integrations",
               dataIcon: "check",
               isShowChangeBadge: false,
@@ -195,14 +195,14 @@ export default {
           tasks: [
             {
               id: 3,
-              title: "Hüseyin",
+              title: "User2",
               description: "check shopping cart dropdown",
               dataIcon: "exclamation",
               isShowChangeBadge: false,
             },
             {
               id: 4,
-              title: "Mehmet",
+              title: "User1",
               description: "Add discount code to checkout page",
               dataIcon: "clock",
               isShowChangeBadge: false,
@@ -214,14 +214,14 @@ export default {
           tasks: [
             {
               id: 5,
-              title: "Hüseyin",
+              title: "User2",
               description: "Provide documentation on integrations",
               dataIcon: "check",
               isShowChangeBadge: false,
             },
             {
               id: 6,
-              title: "Mehmet",
+              title: "User1",
               description: "check shopping cart dropdown",
               dataIcon: "sort-alt",
               isShowChangeBadge: false,
@@ -233,14 +233,14 @@ export default {
           tasks: [
             {
               id: 7,
-              title: "Hüseyin",
+              title: "User2",
               description: "Add discount code to checkout page",
               dataIcon: "clock",
               isShowChangeBadge: false,
             },
             {
               id: 8,
-              title: "Mehmet",
+              title: "User1",
               description: "check shopping cart dropdown",
               dataIcon: "check",
               isShowChangeBadge: false,
